@@ -16,17 +16,17 @@ start_ticks = pygame.time.get_ticks()
 # 1. 사용자 게임 초기화 (배경화면, 게임, 게임 이미지, 좌표, 속도, 폭트 등)
 
 # 배경 이미지 불러오기
-background = pygame.image.load("quizs/background.png")
+background = pygame.image.load("python/quizs/background.png")
 
 # 캐릭터(스프라이트) 불러오기
-character = pygame.image.load("quizs/character.png")
+character = pygame.image.load("python/quizs/character.png")
 character_size = character.get_rect().size # 이미지의 크기를 구해옴
 character_width = character_size[0] # 캐릭터의 가로 크기
 character_height = character_size[1] # 캐릭터의 세로 크기
 character_x_pos = (screen_width / 2) - (character_width / 2) # 화면 가로의 절반 크기에 해당하는 곳에 위치 (가로)
 character_y_pos = screen_height - character_height # 화면 세로 크기 가장 아래에 해당하는 곳에 위치 (세로)
 
-enemy = pygame.image.load("quizs/ddong.png")
+enemy = pygame.image.load("python/quizs/enemy.png")
 enemy = pygame.transform.scale(enemy, (130,130))
 enemy_size = character.get_rect().size # 이미지의 크기를 구해옴
 enemy_width = enemy_size[0] # 캐릭터의 가로 크기
